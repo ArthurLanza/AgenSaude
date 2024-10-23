@@ -1,5 +1,5 @@
 import "./appointments.css";
-import Navbar from "../../components/navbar/navbar.jsx";;
+import Navbar from "../../components/navbar/navbar.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import { doctors, appointments } from "../../constants/data.js";
 import Appointment from "../../components/appointment/appointment.jsx";
