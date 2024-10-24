@@ -2,11 +2,15 @@ import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import logo from "../../assets/logo.png";
 import fundo from "../../assets/fundo.png";
+import { useState } from "react";
 
 function Login() {
 
     const navigate = useNavigate();
 
+    const [email, setEmail] = useState ("");
+    const [password, setPassword] = useState ("");
+    
     function ExecuteLogin() {
         navigate("/appointments");
     }
@@ -22,6 +26,7 @@ function Login() {
                 <div className="mt-4">
                     <input type="email" placeholder="E-mail"
                         className="form-control" />
+                        onChange={}
                 </div>
                 <div className="mt-2">
                     <input type="password" placeholder="Senha"
